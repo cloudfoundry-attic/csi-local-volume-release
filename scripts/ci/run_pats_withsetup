@@ -29,6 +29,7 @@ check_param PLAN_NAME
 check_param BROKER_URL
 check_param BROKER_USER
 check_param CREATE_CONFIG
+check_param BIND_CONFIG
 
 if [ -z "$CF_PASSWORD" ]; then
     if [ -e "vars-store/deployment-vars.yml" ]; then
@@ -53,4 +54,5 @@ ${PLAN_NAME} \
 ${BROKER_URL} \
 ${BROKER_USER} \
 ${BROKER_PASSWORD} \
-${CREATE_CONFIG}
+${CREATE_CONFIG} \
+${BIND_CONFIG}
