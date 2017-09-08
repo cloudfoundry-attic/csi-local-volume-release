@@ -33,6 +33,7 @@ case $1 in
       --listenAddr="<%= p("csi-localbroker.listen-addr") %>" \
       --csiConAddr="<%= p("csi-localbroker.csi-controller-addr") %>" \
       --serviceSpec="/var/vcap/jobs/csi-localbroker/config/service.json" \
+      --driverName="<%= p("csi-localbroker.driver-name") %>" \
       --dataDir="<%= p("csi-localbroker.data-dir") %>" \
       --username="<%= p("csi-localbroker.username") %>" \
       --password="<%= p("csi-localbroker.password") %>" \
