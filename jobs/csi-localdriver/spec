@@ -23,3 +23,7 @@ properties:
   csi_localdriver.log_level:
     description: "localdriver log level"
     default: "info"
+  csi_localdriver.mount_root:
+    # TODO: move this into diego/volman, the CO is supposed to provide CSI driver the mount path.
+    description: "[hacky; need an existing mount root that has write permissions] path to place all mounts under as subdirectories"
+    default: "/var/vcap/data/csimountroot"
