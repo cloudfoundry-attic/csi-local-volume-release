@@ -6,7 +6,7 @@ RUN_DIR=/var/vcap/sys/run/csi-localdriver
 LOG_DIR=/var/vcap/sys/log/csi-localdriver
 PIDFILE=$RUN_DIR/csi_localdriver.pid
 
-MOUNT_ROOT=<%= p("csi_localdriver.listen_addr") %>
+MOUNT_ROOT=<%= p("csi_localdriver.mount_root") %>
 
 source /var/vcap/packages/csi-pid-utils/pid_utils.sh
 
