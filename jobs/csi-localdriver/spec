@@ -16,7 +16,7 @@ properties:
     default: "0.0.0.0:9760"
   csi_localdriver.plugin_path:
     description: "path to place csi driver spec/json file for volman to discover"
-    default: "/var/vcap/data/csiplugins/csi-localdriver"
+    default: "/var/vcap/data/csiplugins"
   csi_localdriver.volumes_root:
     description: "path to mount volumes into on the cell"
     default: "/var/vcap/data/volumes/csi-localdriver-volumes"
