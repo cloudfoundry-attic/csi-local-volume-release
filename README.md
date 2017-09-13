@@ -35,7 +35,7 @@ bosh -e vbox upload-release
 
 ```bash
 cd ~/workspace/
-bosh -e vbox -d cf deploy ./cf-deployment/cf-deployment.yml --vars-store ./cf-deployment/deployment-vars.yml -o ./operations/enable-csi-local-plugin-bosh-lite.yml -v system_domain=bosh-lite.com
+bosh -e vbox -d cf deploy ./cf-deployment/cf-deployment.yml --vars-store ./cf-deployment/deployment-vars.yml -o ./csi-local-volume-release/operations/enable-csi-local-plugin-bosh-lite.yml -v system_domain=bosh-lite.com
 ```
 
 ## Register local-broker
