@@ -5,7 +5,7 @@ CSI local Volume Release for Cloud Foundry that follows protocol specified by Co
 
 ## Pre-requisites
 
-1. Install and start [BOSH-Lite](https://github.com/cloudfoundry/bosh-lite), following its [README](https://github.com/cloudfoundry/bosh-lite/blob/master/README.md).
+1. Install and start [BOSH-Lite](https://github.com/cloudfoundry/bosh-lite), following its [document](https://bosh.io/docs/bosh-lite).
 
 2. Install bosh v2 according to this [document](https://bosh.io/docs/cli-v2.html).
 
