@@ -1,5 +1,5 @@
 # csi-local-volume-release
-Local Volume Release for Cloud Foundry that follows protocol specified by Container Storage Interface, it packages a [csi-localdriver](https://github.com/jeffpak/local-node-plugin/tree/bd75d5f64c8ab6cd351d190451ecd2685df71ba), a [csi-localcontroller](https://github.com/jeffpak/local-controller-plugin/tree/f4d1f789816da1690f440b23444653b3ee9d3702) and a [csi-broker](https://github.com/cloudfoundry/csibroker) for consumption by a volman-enabled Cloud Foundry deployment.
+CSI local Volume Release for Cloud Foundry that follows protocol specified by Container Storage Interface, it packages a [csi-localdriver](https://github.com/jeffpak/local-node-plugin/tree/bd75d5f64c8ab6cd351d190451ecd2685df71ba), a [csi-localcontroller](https://github.com/jeffpak/local-controller-plugin/tree/f4d1f789816da1690f440b23444653b3ee9d3702) and a [csi-broker](https://github.com/cloudfoundry/csibroker) for consumption by a volman-enabled Cloud Foundry deployment.
 
 # Deploying to Bosh-Lite
 
