@@ -5,7 +5,7 @@ CSI local Volume Release for Cloud Foundry that follows protocol specified by Co
 
 ## Pre-requisites
 
-1. Install and start [BOSH-Lite](https://github.com/cloudfoundry/bosh-lite), following its [README](https://github.com/cloudfoundry/bosh-lite/blob/master/README.md).  For garden-linux to function properly in the Diego deployment, we recommend using version 9000.69.0 or later of the BOSH-Lite Vagrant box image.
+1. Install and start [BOSH-Lite](https://github.com/cloudfoundry/bosh-lite), following its [README](https://github.com/cloudfoundry/bosh-lite/blob/master/README.md).
 
 2. Install bosh v2 according to this [document](https://bosh.io/docs/cli-v2.html).
 
