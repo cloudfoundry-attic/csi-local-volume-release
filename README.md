@@ -17,6 +17,7 @@ CSI local Volume Release for Cloud Foundry that follows protocol specified by Co
 cd ~/workspace/
 git clone https://github.com/cloudfoundry/cf-deployment.git
 cd cf-deployment
+
 bosh -e vbox update-cloud-config ./bosh-lite/cloud-config.yml
 bosh upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-trusty-go_agent
 ```
@@ -27,6 +28,8 @@ bosh upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-tru
 cd ~/workspace/
 git clone https://github.com/cloudfoundry/csi-local-volume-release.git
 cd csi-local-volume-release
+
+# create csi-local-volume-release and upload
 bosh create-release
 bosh -e vbox upload-release
 ```
@@ -35,21 +38,30 @@ bosh -e vbox upload-release
 
 ```bash
 cd ~/workspace/cf-deployment
-bosh -e vbox -d cf deploy ./cf-deployment.yml --vars-store ./deployment-vars.yml -o ./operations/bosh-lite.yml -o ./operations/use-latest-stemcell.yml -o ../csi-local-volume-release/operations/enable-csi-local-plugin-bosh-lite.yml -v system_domain=bosh-lite.com
+
+bosh -e vbox -d cf deploy ./cf-deployment.yml \
+--vars-store ./deployment-vars.yml \
+-o ./operations/bosh-lite.yml \
+-o ./operations/use-latest-stemcell.yml \
+-o ../csi-local-volume-release/operations/enable-csi-local-plugin-bosh-lite.yml \
+-v system_domain=bosh-lite.com
 ```
 
 ## Register local-broker
 
 ```bash
 cd ~/workspace/cf-deployment
-# login with cf
 cf_password=`cat deployment-vars.yml |grep cf_admin_password|awk '{print $2}'`
+broker_password=`cat deployment-vars.yml |grep csi-localbroker-password|awk '{print $2}'`
+
+# login with cf
 cf api api.bosh-lite.com
 cf auth admin ${cf_password}
 
 # optionaly delete previous broker:
 cf delete-service-broker csilocalfs-broker
-broker_password=`cat deployment-vars.yml |grep csi-localbroker-password|awk '{print $2}'`
+
+# create-service-broker and enable access
 cf create-service-broker csilocalfs-broker csi-localbroker ${broker_password} http://csi-localbroker.bosh-lite.com
 cf enable-service-access csilocalfs-broker
 ```
@@ -59,9 +71,13 @@ cf enable-service-access csilocalfs-broker
 ```bash
 cd ~/workspace/csi-local-volume-release
 pushd ./src/code.cloudfoundry.org/persi-acceptance-tests/
-cf create-service csilocalfs free pora-volume-instance -c {"name":"csi-local-storage","volume_capabilities":[{"mount":{}}]} 
-cf push pora -f ./assets/pora/manifest.yml -p ./assets/pora/ --no-start
 
+# create a service
+cf create-service csilocalfs free pora-volume-instance \
+-c {"name":"csi-local-storage","volume_capabilities":[{"mount":{}}]} 
+
+# push pora and bind service
+cf push pora -f ./assets/pora/manifest.yml -p ./assets/pora/ --no-start
 cf bind-service pora pora-volume-instance
 cf start pora
 popd
