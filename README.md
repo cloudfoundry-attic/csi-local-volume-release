@@ -73,8 +73,14 @@ cd ~/workspace/csi-local-volume-release
 pushd ./src/code.cloudfoundry.org/persi-acceptance-tests/
 
 # create a service
+cf create-org test_org
+cf target -o test_org
+
+cf create-space test_space
+cf target -s test_space
+
 cf create-service csilocalfs free pora-volume-instance \
--c {"name":"csi-local-storage","volume_capabilities":[{"mount":{}}]} 
+-c '{"name":"csi-local-storage","volume_capabilities":[{"mount":{}}]}'
 
 # push pora and bind service
 cf push pora -f ./assets/pora/manifest.yml -p ./assets/pora/ --no-start
