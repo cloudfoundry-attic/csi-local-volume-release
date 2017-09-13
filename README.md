@@ -63,7 +63,7 @@ cf delete-service-broker csilocalfs-broker
 
 # create-service-broker and enable access
 cf create-service-broker csilocalfs-broker csi-localbroker ${broker_password} http://csi-localbroker.bosh-lite.com
-cf enable-service-access csilocalfs-broker
+cf enable-service-access csilocalfs -p free
 ```
 
 ## Deploy pora and test volume services
