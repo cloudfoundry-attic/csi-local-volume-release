@@ -55,7 +55,7 @@ cf_password=`cat deployment-vars.yml |grep cf_admin_password|awk '{print $2}'`
 broker_password=`cat deployment-vars.yml |grep csi-localbroker-password|awk '{print $2}'`
 
 # login with cf
-cf api api.bosh-lite.com
+cf api api.bosh-lite.com --skip-ssl-validation
 cf auth admin ${cf_password}
 
 # optionaly delete previous broker:
