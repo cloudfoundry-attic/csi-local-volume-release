@@ -34,8 +34,8 @@ bosh -e vbox upload-release
 3. Deploy csi-local-volume-release with cf
 
 ```bash
-cd ~/workspace/
-bosh -e vbox -d cf deploy ./cf-deployment/cf-deployment.yml --vars-store ./cf-deployment/deployment-vars.yml -o ./csi-local-volume-release/operations/enable-csi-local-plugin-bosh-lite.yml -v system_domain=bosh-lite.com
+cd ~/workspace/cf-deployment
+bosh -e vbox -d cf deploy ./cf-deployment.yml --vars-store ./deployment-vars.yml -o ./operations/bosh-lite.yml -o ./operations/use-latest-stemcell.yml -o ../csi-local-volume-release/operations/enable-csi-local-plugin-bosh-lite.yml -v system_domain=bosh-lite.com
 ```
 
 ## Register local-broker
