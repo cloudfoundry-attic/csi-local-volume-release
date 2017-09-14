@@ -9,12 +9,13 @@ files:
   - code.cloudfoundry.org/csibroker/*.go # gosub
   - code.cloudfoundry.org/csibroker/csibroker/*.go # gosub
   - code.cloudfoundry.org/csibroker/utils/*.go # gosub
+  - code.cloudfoundry.org/csishim/*.go # gosub
   - code.cloudfoundry.org/debugserver/*.go # gosub
+  - code.cloudfoundry.org/goshims/grpcshim/*.go # gosub
   - code.cloudfoundry.org/goshims/ioutilshim/*.go # gosub
   - code.cloudfoundry.org/goshims/osshim/*.go # gosub
   - code.cloudfoundry.org/lager/*.go # gosub
   - code.cloudfoundry.org/lager/lagerflags/*.go # gosub
-  - github.com/cloudfoundry/csishim/*.go # gosub
   - github.com/container-storage-interface/spec/lib/go/csi/*.go # gosub
   - github.com/golang/protobuf/jsonpb/*.go # gosub
   - github.com/golang/protobuf/proto/*.go # gosub
