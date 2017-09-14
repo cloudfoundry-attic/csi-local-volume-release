@@ -9,11 +9,11 @@ files:
   - code.cloudfoundry.org/goshims/filepathshim/*.go # gosub
   - code.cloudfoundry.org/goshims/osshim/*.go # gosub
   - code.cloudfoundry.org/lager/*.go # gosub
+  - github.com/container-storage-interface/spec/lib/go/csi/*.go # gosub
   - github.com/golang/protobuf/proto/*.go # gosub
   - github.com/golang/protobuf/ptypes/any/*.go # gosub
   - github.com/jeffpak/local-controller-plugin/cmd/localcontrollerplugin/*.go # gosub
   - github.com/jeffpak/local-controller-plugin/controller/*.go # gosub
-  - github.com/paulcwarren/spec/*.go # gosub
   - github.com/tedsuo/ifrit/*.go # gosub
   - github.com/tedsuo/ifrit/grpc_server/*.go # gosub
   - github.com/tedsuo/ifrit/sigmon/*.go # gosub
