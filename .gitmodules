@@ -83,3 +83,6 @@
 [submodule "src/github.com/container-storage-interface/spec"]
 	path = src/github.com/container-storage-interface/spec
 	url = https://github.com/container-storage-interface/spec.git
+[submodule "src/code.cloudfoundry.org/csishim"]
+	path = src/code.cloudfoundry.org/csishim
+	url = https://github.com/cloudfoundry/csishim.git
