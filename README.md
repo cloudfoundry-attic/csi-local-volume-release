@@ -19,7 +19,7 @@ git clone https://github.com/cloudfoundry/cf-deployment.git
 cd cf-deployment
 
 bosh -e vbox update-cloud-config ./bosh-lite/cloud-config.yml
-bosh upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-trusty-go_agent
+bosh -e vbox upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-trusty-go_agent
 ```
 
 2. Get csi-local-volume-release, create a bosh release and upload it.
