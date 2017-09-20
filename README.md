@@ -28,6 +28,7 @@ bosh upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-tru
 cd ~/workspace/
 git clone https://github.com/cloudfoundry/csi-local-volume-release.git
 cd csi-local-volume-release
+./scripts/update
 
 # create csi-local-volume-release and upload
 bosh create-release
