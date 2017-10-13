@@ -14,9 +14,12 @@ files:
   - code.cloudfoundry.org/goshims/grpcshim/*.go # gosub
   - code.cloudfoundry.org/goshims/ioutilshim/*.go # gosub
   - code.cloudfoundry.org/goshims/osshim/*.go # gosub
+  - code.cloudfoundry.org/goshims/sqlshim/*.go # gosub
   - code.cloudfoundry.org/lager/*.go # gosub
   - code.cloudfoundry.org/lager/lagerflags/*.go # gosub
+  - github.com/cloudfoundry-incubator/service-broker-store/brokerstore/*.go # gosub
   - github.com/container-storage-interface/spec/lib/go/csi/*.go # gosub
+  - github.com/go-sql-driver/mysql/*.go # gosub
   - github.com/golang/protobuf/jsonpb/*.go # gosub
   - github.com/golang/protobuf/proto/*.go # gosub
   - github.com/golang/protobuf/ptypes/any/*.go # gosub
@@ -28,6 +31,8 @@ files:
   - github.com/tedsuo/ifrit/grouper/*.go # gosub
   - github.com/tedsuo/ifrit/http_server/*.go # gosub
   - github.com/tedsuo/ifrit/sigmon/*.go # gosub
+  - golang.org/x/crypto/bcrypt/*.go # gosub
+  - golang.org/x/crypto/blowfish/*.go # gosub
   - golang.org/x/net/context/*.go # gosub
   - golang.org/x/net/http2/*.go # gosub
   - golang.org/x/net/http2/hpack/*.go # gosub
