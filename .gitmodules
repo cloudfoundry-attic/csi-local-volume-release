@@ -89,12 +89,12 @@
 [submodule "src/github.com/go-sql-driver/mysql"]
 	path = src/github.com/go-sql-driver/mysql
 	url = https://github.com/go-sql-driver/mysql
-[submodule "src/github.com/cloudfoundry-incubator/service-broker-store"]
-	path = src/github.com/cloudfoundry-incubator/service-broker-store
-	url = https://github.com/cloudfoundry-incubator/service-broker-store.git
 [submodule "src/golang.org/x/crypto"]
 	path = src/golang.org/x/crypto
 	url = https://go.googlesource.com/crypto
 [submodule "src/gopkg.in/DATA-DOG/go-sqlmock.v1"]
 	path = src/gopkg.in/DATA-DOG/go-sqlmock.v1
 	url = https://github.com/DATA-DOG/go-sqlmock
+[submodule "src/code.cloudfoundry.org/service-broker-store"]
+	path = src/code.cloudfoundry.org/service-broker-store
+	url = https://github.com/cloudfoundry/service-broker-store.git

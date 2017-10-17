@@ -17,7 +17,7 @@ files:
   - code.cloudfoundry.org/goshims/sqlshim/*.go # gosub
   - code.cloudfoundry.org/lager/*.go # gosub
   - code.cloudfoundry.org/lager/lagerflags/*.go # gosub
-  - github.com/cloudfoundry-incubator/service-broker-store/brokerstore/*.go # gosub
+  - code.cloudfoundry.org/service-broker-store/brokerstore/*.go # gosub
   - github.com/container-storage-interface/spec/lib/go/csi/*.go # gosub
   - github.com/go-sql-driver/mysql/*.go # gosub
   - github.com/golang/protobuf/jsonpb/*.go # gosub
