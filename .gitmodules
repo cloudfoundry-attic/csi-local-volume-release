@@ -65,9 +65,6 @@
 [submodule "src/github.com/Kaixiang/csiplugin"]
 	path = src/github.com/Kaixiang/csiplugin
 	url = https://github.com/Kaixiang/csiplugin
-[submodule "src/code.cloudfoundry.org/cflager"]
-	path = src/code.cloudfoundry.org/cflager
-	url = https://github.com/cloudfoundry/cflager
 [submodule "src/code.cloudfoundry.org/volman"]
 	path = src/code.cloudfoundry.org/volman
 	url = https://github.com/cloudfoundry/volman.git
