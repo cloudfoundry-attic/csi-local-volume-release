@@ -53,9 +53,6 @@
 [submodule "src/code.cloudfoundry.org/csibroker"]
 	path = src/code.cloudfoundry.org/csibroker
 	url = https://github.com/cloudfoundry/csibroker.git
-[submodule "src/github.com/paulcwarren/spec"]
-	path = src/github.com/paulcwarren/spec
-	url = https://github.com/paulcwarren/spec.git
 [submodule "code.cloudfoundry.org/cflager"]
 	path = code.cloudfoundry.org/cflager
 	url = https://github.com/cloudfoundry/cflager
