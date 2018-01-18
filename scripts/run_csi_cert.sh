@@ -27,6 +27,6 @@ trap cleanup EXIT
 /bin/bash scripts/start_controller_plugin_tcp.sh
 /bin/bash scripts/start_node_plugin_tcp.sh
 pushd src/github.com/paulcwarren/csi-cert
-    ginkgo -r -p
+    ginkgo -r
 popd
 
