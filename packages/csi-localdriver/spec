@@ -5,6 +5,7 @@ dependencies:
 - golang-csi
 
 files:
+  - code.cloudfoundry.org/csiplugin/*.go # gosub
   - code.cloudfoundry.org/csishim/*.go # gosub
   - code.cloudfoundry.org/goshims/filepathshim/*.go # gosub
   - code.cloudfoundry.org/goshims/grpcshim/*.go # gosub
@@ -12,7 +13,6 @@ files:
   - code.cloudfoundry.org/lager/*.go # gosub
   - code.cloudfoundry.org/lager/lagerflags/*.go # gosub
   - code.cloudfoundry.org/volman/*.go # gosub
-  - github.com/Kaixiang/csiplugin/*.go # gosub
   - github.com/container-storage-interface/spec/lib/go/csi/*.go # gosub
   - github.com/golang/protobuf/proto/*.go # gosub
   - github.com/golang/protobuf/ptypes/any/*.go # gosub

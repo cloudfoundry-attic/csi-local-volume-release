@@ -95,3 +95,6 @@
 [submodule "src/code.cloudfoundry.org/service-broker-store"]
 	path = src/code.cloudfoundry.org/service-broker-store
 	url = https://github.com/cloudfoundry/service-broker-store
+[submodule "src/code.cloudfoundry.org/csiplugin"]
+	path = src/code.cloudfoundry.org/csiplugin
+	url = https://github.com/cloudfoundry/csiplugin.git
