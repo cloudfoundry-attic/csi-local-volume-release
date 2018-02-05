@@ -18,6 +18,7 @@ files:
   - github.com/golang/protobuf/ptypes/any/*.go # gosub
   - github.com/jeffpak/local-node-plugin/cmd/localnodeplugin/*.go # gosub
   - github.com/jeffpak/local-node-plugin/node/*.go # gosub
+  - github.com/jeffpak/local-node-plugin/oshelper/*.go # gosub
   - github.com/tedsuo/ifrit/*.go # gosub
   - github.com/tedsuo/ifrit/grpc_server/*.go # gosub
   - github.com/tedsuo/ifrit/sigmon/*.go # gosub
