@@ -1,0 +1,10 @@
+---
+platform: windows
+
+rootfs_uri: docker:///cloudfoundry/inigo-ci
+
+inputs:
+- name: csi-local-volume-release
+
+run:
+  path: csi-local-volume-release/scripts/ci/local-node-plugin-unit.sh
