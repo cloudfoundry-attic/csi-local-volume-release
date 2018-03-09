@@ -9,7 +9,7 @@ files:
   - code.cloudfoundry.org/goshims/osshim/*.go # gosub
   - code.cloudfoundry.org/lager/*.go # gosub
   - code.cloudfoundry.org/lager/lagerflags/*.go # gosub
-  - github.com/container-storage-interface/spec/lib/go/csi/*.go # gosub
+  - github.com/container-storage-interface/spec/lib/go/csi/v0/*.go # gosub
   - github.com/golang/protobuf/proto/*.go # gosub
   - github.com/golang/protobuf/ptypes/any/*.go # gosub
   - github.com/jeffpak/local-controller-plugin/cmd/localcontrollerplugin/*.go # gosub
