@@ -7,6 +7,6 @@ pushd csi-local-volume-release
 
 rm -rf .final_builds
 
-bosh -n --parallel 10 create release --version $version --name csi-local-volume --force --with-tarball
+bosh -n create-release --tarball=dev_releases/csi-local-volume/csi-local-volume-$version.tgz --version $version --name csi-local-volume --force
 mv dev_releases/csi-local-volume/csi-local-volume-$version.tgz ../created-csi-local-volume-release/csi-local-volume-$version.tgz
 popd
