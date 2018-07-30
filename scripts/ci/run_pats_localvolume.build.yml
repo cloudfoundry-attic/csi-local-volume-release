@@ -1,11 +1,16 @@
 ---
 platform: linux
 
-rootfs_uri: docker:///cloudfoundry/diego-pipeline
+image_resource:
+  type: docker-image
+  source:
+    repository: relintdockerhubpushbot/cf-deployment-concourse-tasks
+    tag: v5.15.0
 
 inputs:
   - name: csi-local-volume-release
-  - name: vars-store
+  - name: persi-ci
+  - name: director-state
 
 params:
   CF_USERNAME: replace-me
