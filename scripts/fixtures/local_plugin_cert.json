@@ -1,4 +1,4 @@
 {
-  "controller_address": "127.0.0.1:50051",
+  "controller_address": "127.0.0.1:9860",
   "node_address":"127.0.0.1:50052"
 }
