@@ -16,6 +16,7 @@ properties:
     default: "0.0.0.0:8999"
   csi-localbroker.csi-controller-addr:
     description: "URL of the remote csi controller listens on"
+    default: "127.0.0.1:9860"
   csi-localbroker.driver-name:
     description: "the driver name of csi local broker"
     default: "com.github.jeffpak.local-node-plugin"
