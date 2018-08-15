@@ -1,27 +1,29 @@
-{
-   "id":"<%= p("csi-localbroker.service-id") %>",
-   "driver_name": "<%= p("csi-localbroker.driver-name") %>",
-   "connection_address": "<%= p("csi-localbroker.csi-controller-addr") %>",
-   "name":"<%= p("csi-localbroker.service-name") %>",
-   "description":"csi local volume service",
-   "bindable":true,
-   "tags":[
-      "volumeService"
-   ],
-   "plan_updateable":false,
-   "plans":[
-      {
-         "id":"<%= p("csi-localbroker.plan-id") %>",
-         "name":"<%= p("csi-localbroker.plan-name") %>",
-         "description":"<%= p("csi-localbroker.plan-desc") %>",
-         "free":true,
-         "bindable":true,
-         "metadata":{
-            "displayName":"csi local volume service"
-         }
-      }
-   ],
-   "requires":[
-      "volume_mount"
-   ]
-}
+[
+    {
+       "id":"<%= p("csi-localbroker.service-id") %>",
+       "driver_name": "<%= p("csi-localbroker.driver-name") %>",
+       "connection_address": "<%= p("csi-localbroker.csi-controller-addr") %>",
+       "name":"<%= p("csi-localbroker.service-name") %>",
+       "description":"csi local volume service",
+       "bindable":true,
+       "tags":[
+          "volumeService"
+       ],
+       "plan_updateable":false,
+       "plans":[
+          {
+             "id":"<%= p("csi-localbroker.plan-id") %>",
+             "name":"<%= p("csi-localbroker.plan-name") %>",
+             "description":"<%= p("csi-localbroker.plan-desc") %>",
+             "free":true,
+             "bindable":true,
+             "metadata":{
+                "displayName":"csi local volume service"
+             }
+          }
+       ],
+       "requires":[
+          "volume_mount"
+       ]
+    }
+]
