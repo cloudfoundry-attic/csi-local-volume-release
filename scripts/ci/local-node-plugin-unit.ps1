@@ -24,7 +24,7 @@ $env:PATH="$PWD/bin;$env:PATH"
 
 go install github.com/onsi/ginkgo/ginkgo
 
-cd src/github.com/jeffpak/local-node-plugin
+cd src/code.cloudfoundry.org/local-node-plugin
 ginkgo -r -keepGoing -p -trace -randomizeAllSpecs -progress --race
 
 CheckLastExitCode

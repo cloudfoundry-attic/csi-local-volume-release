@@ -12,6 +12,6 @@ export PATH=$PWD/bin:$PATH
 
 go install github.com/onsi/ginkgo/ginkgo
 
-pushd src/github.com/jeffpak/local-controller-plugin
+pushd src/code.cloudfoundry.org/local-controller-plugin
   ginkgo -r -keepGoing -p -trace -randomizeAllSpecs -progress --race "$@"
 popd

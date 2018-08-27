@@ -19,7 +19,7 @@ properties:
     default: "127.0.0.1:9860"
   csi-localbroker.driver-name:
     description: "the driver name of csi local broker"
-    default: "com.github.jeffpak.local-node-plugin"
+    default: "org.cloudfoundry.code.local-node-plugin"
   csi-localbroker.service-name:
     description: "name of the service to be registered with cf"
     default: "csilocalfs"
