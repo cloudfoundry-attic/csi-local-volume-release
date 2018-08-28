@@ -104,7 +104,7 @@
 	url = https://github.com/cloudfoundry/cfhttp.git
 [submodule "src/code.cloudfoundry.org/local-k8s-csi-driver"]
 	path = src/code.cloudfoundry.org/local-k8s-csi-driver
-	url = https://github.com/cloudfoundry-incubator/local-k8s-csi-driver
+	url = https://github.com/cloudfoundry/local-k8s-csi-driver
 [submodule "src/github.com/kubernetes-csi/drivers"]
 	path = src/github.com/kubernetes-csi/drivers
 	url = https://github.com/kubernetes-csi/drivers
@@ -113,7 +113,7 @@
 	url = https://github.com/golang/glog
 [submodule "src/code.cloudfoundry.org/local-node-plugin"]
 	path = src/code.cloudfoundry.org/local-node-plugin
-	url = https://github.com/julian-hj/local-node-plugin
+	url = https://github.com/cloudfoundry/local-node-plugin
 [submodule "src/code.cloudfoundry.org/local-controller-plugin"]
 	path = src/code.cloudfoundry.org/local-controller-plugin
-	url = https://github.com/julian-hj/local-controller-plugin
+	url = https://github.com/cloudfoundry/local-controller-plugin
