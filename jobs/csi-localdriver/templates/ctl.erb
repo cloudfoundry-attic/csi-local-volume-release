@@ -38,7 +38,7 @@ case $1 in
 
     # volume drivers need to create directories with 777 so container users can see them
     umask 0
-    exec chpst -u vcap:vcap /var/vcap/packages/csi-localdriver/bin/localnodeplugin \
+    exec chpst /var/vcap/packages/csi-localdriver/bin/localnodeplugin \
       --listenAddr="<%= p("csi_localdriver.listen_addr") %>" \
       --pluginsPath="<%= p("csi_localdriver.plugin_path") %>" \
       --volumesRoot="<%= p("csi_localdriver.volumes_root") %>" \
