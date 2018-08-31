@@ -3,6 +3,7 @@ platform: windows
 
 inputs:
 - name: csi-local-volume-release
+- name: csi-local-volume-release-concourse-tasks
 
 run:
   path: powershell
@@ -10,4 +11,4 @@ run:
     - "-ExecutionPolicy"
     - "ByPass"
     - "-File"
-    - "csi-local-volume-release/scripts/ci/local-node-plugin-unit.ps1"
+    - "csi-local-volume-release-concourse-tasks/scripts/ci/local-node-plugin-unit.ps1"

@@ -9,6 +9,7 @@ image_resource:
 
 inputs:
   - name: csi-local-volume-release
+  - name: csi-local-volume-release-concourse-tasks
   - name: persi-ci
   - name: director-state
 
@@ -21,4 +22,4 @@ params:
   CF_API_ENDPOINT: replace-me
   APPS_DOMAIN: replace-me
 run:
-  path: csi-local-volume-release/scripts/ci/run_pats_withsetup
+  path: csi-local-volume-release-concourse-tasks/scripts/ci/run_pats_withsetup

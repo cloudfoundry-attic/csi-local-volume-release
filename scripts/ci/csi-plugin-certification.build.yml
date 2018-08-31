@@ -9,7 +9,8 @@ image_resource:
 
 inputs:
 - name: csi-local-volume-release
+- name: csi-local-volume-release-concourse-tasks
 - name: csi-cert
 
 run:
-  path: csi-local-volume-release/scripts/ci/csi-plugin-certification.sh
+  path: csi-local-volume-release-concourse-tasks/scripts/ci/csi-plugin-certification.sh
