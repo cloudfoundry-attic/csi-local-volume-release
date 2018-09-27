@@ -117,3 +117,6 @@
 [submodule "src/code.cloudfoundry.org/local-controller-plugin"]
 	path = src/code.cloudfoundry.org/local-controller-plugin
 	url = https://github.com/cloudfoundry/local-controller-plugin
+[submodule "src/code.cloudfoundry.org/credhub-cli"]
+	path = src/code.cloudfoundry.org/credhub-cli
+	url = https://github.com/cloudfoundry-incubator/credhub-cli.git
