@@ -31,6 +31,8 @@ case $1 in
 
     exec chpst -u vcap:vcap /var/vcap/packages/csibroker/bin/csibroker \
       --listenAddr="<%= p("csi-localbroker.listen-addr") %>" \
+      --logLevel="<%= p("csi-localbroker.log_level") %>" \
+      --logFormat="<%= p("csi-localbroker.log_format") %>" \
       --serviceSpec="/var/vcap/jobs/csi-localbroker/config/service.json" \
       --dataDir="<%= p("csi-localbroker.data-dir") %>" \
       --username="<%= p("csi-localbroker.username") %>" \
