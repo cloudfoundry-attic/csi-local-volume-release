@@ -43,7 +43,7 @@ case $1 in
       --pluginsPath="<%= p("csi_localdriver.plugin_path") %>" \
       --volumesRoot="<%= p("csi_localdriver.volumes_root") %>" \
       --logLevel="<%= p("csi_localdriver.log_level") %>" \
-      --logFormat="<%= p("csi_localdriver.log_format") %>" \
+      --timeFormat="<%= p("csi_localdriver.log_time_format") %>" \
       2> >(tee -a $LOG_DIR/csi-localdriver.stderr.log | logger -p user.error -t vcap.csi-localdriver) \
       1> >(tee -a $LOG_DIR/csi-localdriver.stdout.log | logger -p user.info -t vcap.csi-localdriver)
 

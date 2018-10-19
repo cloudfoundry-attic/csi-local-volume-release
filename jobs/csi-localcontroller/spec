@@ -16,6 +16,6 @@ properties:
   csi_localcontroller.log_level:
     description: "localcontroller log level"
     default: "info"
-  csi_localcontroller.log_format:
+  csi_localcontroller.log_time_format:
     description: "Format for timestamp in component logs. Valid values are 'unix-epoch' and 'rfc3339'."
     default: "rfc3339"

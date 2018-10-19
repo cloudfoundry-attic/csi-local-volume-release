@@ -47,6 +47,6 @@ properties:
   csi-localbroker.log_level:
     description: "csibroker log level"
     default: "info"
-  csi-localbroker.log_format:
+  csi-localbroker.log_time_format:
     description: "Format for timestamp in component logs. Valid values are 'unix-epoch' and 'rfc3339'."
     default: "rfc3339"
