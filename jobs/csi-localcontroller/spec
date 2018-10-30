@@ -6,7 +6,6 @@ templates:
 
 packages:
 - golang-csi
-- csi-pid-utils
 - csi-localcontroller
 
 properties:
