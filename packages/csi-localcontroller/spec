@@ -2,7 +2,7 @@
 name: csi-localcontroller
 
 dependencies:
-- golang-csi
+- golang-1-linux
 
 files:
   - code.cloudfoundry.org/goshims/filepathshim/*.go # gosub

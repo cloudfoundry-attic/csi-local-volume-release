@@ -5,7 +5,6 @@ templates:
   ctl.erb: bin/csi_localcontroller_ctl
 
 packages:
-- golang-csi
 - csi-localcontroller
 
 properties:

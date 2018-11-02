@@ -6,7 +6,6 @@ templates:
   ctl.erb: bin/csi_localdriver_ctl
 
 packages:
-- golang-csi
 - csi-localdriver
 
 properties:
