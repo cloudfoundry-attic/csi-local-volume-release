@@ -90,9 +90,6 @@
 [submodule "src/code.cloudfoundry.org/csiplugin"]
 	path = src/code.cloudfoundry.org/csiplugin
 	url = https://github.com/cloudfoundry/csiplugin.git
-[submodule "src/code.cloudfoundry.org/voldriver"]
-	path = src/code.cloudfoundry.org/voldriver
-	url = https://github.com/cloudfoundry/voldriver.git
 [submodule "src/github.com/tedsuo/rata"]
 	path = src/github.com/tedsuo/rata
 	url = https://github.com/tedsuo/rata.git
