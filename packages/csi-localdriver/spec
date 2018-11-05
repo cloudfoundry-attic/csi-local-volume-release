@@ -7,6 +7,8 @@ dependencies:
 files:
   - code.cloudfoundry.org/csiplugin/*.go # gosub
   - code.cloudfoundry.org/csishim/*.go # gosub
+  - code.cloudfoundry.org/dockerdriver/*.go # gosub
+  - code.cloudfoundry.org/dockerdriver/invoker/*.go # gosub
   - code.cloudfoundry.org/goshims/execshim/*.go # gosub
   - code.cloudfoundry.org/goshims/filepathshim/*.go # gosub
   - code.cloudfoundry.org/goshims/grpcshim/*.go # gosub
@@ -16,8 +18,6 @@ files:
   - code.cloudfoundry.org/local-node-plugin/cmd/localnodeplugin/*.go # gosub
   - code.cloudfoundry.org/local-node-plugin/node/*.go # gosub
   - code.cloudfoundry.org/local-node-plugin/oshelper/*.go # gosub
-  - code.cloudfoundry.org/voldriver/*.go # gosub
-  - code.cloudfoundry.org/voldriver/invoker/*.go # gosub
   - code.cloudfoundry.org/volman/*.go # gosub
   - github.com/bmizerany/pat/*.go # gosub
   - github.com/container-storage-interface/spec/lib/go/csi/v0/*.go # gosub
