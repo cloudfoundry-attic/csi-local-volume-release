@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e -x
+set -e
 
 RUN_DIR=/var/vcap/sys/run/csi-localbroker
 LOG_DIR=/var/vcap/sys/log/csi-localbroker
@@ -13,7 +13,6 @@ exec 1>> /var/vcap/sys/log/monit/${SCRIPT}.log
 exec 2>> /var/vcap/sys/log/monit/${SCRIPT}.err.log
 
 case $1 in
-
   start)
     mkdir -p $RUN_DIR
     chown -R vcap:vcap $RUN_DIR
@@ -36,7 +35,6 @@ case $1 in
       --password="<%= p("csi-localbroker.password") %>" \
       2> >(tee -a $LOG_DIR/csi-localbroker.stderr.log | logger -p user.error -t vcap.csi-localbroker) \
       1> >(tee -a $LOG_DIR/csi-localbroker.stdout.log | logger -p user.info -t vcap.csi-localbroker)
-
     ;;
 
   stop)
@@ -48,7 +46,5 @@ case $1 in
 
   *)
     echo "Usage: csi_localbroker_ctl {start|stop}"
-
     ;;
-
 esac
