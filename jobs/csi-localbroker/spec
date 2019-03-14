@@ -11,7 +11,7 @@ packages:
 properties:
   csi-localbroker.listen-addr:
     description: "address csi-localbroker listens on"
-    default: "0.0.0.0:8999"
+    default: "0.0.0.0:9010"
   csi-localbroker.csi-controller-addr:
     description: "URL of the remote csi controller listens on"
     default: "127.0.0.1:9860"
