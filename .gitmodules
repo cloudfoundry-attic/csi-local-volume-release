@@ -49,16 +49,6 @@
 	path = src/code.cloudfoundry.org/csibroker
 	url = https://github.com/cloudfoundry/csibroker
 	branch = master
-[submodule "code.cloudfoundry.org/cflager"]
-	path = code.cloudfoundry.org/cflager
-	url = https://github.com/cloudfoundry/cflager
-[submodule "github.com/Kaixiang/csiplugin"]
-	path = github.com/Kaixiang/csiplugin
-	url = https://github.com/Kaixiang/csiplugin
-[submodule "src/github.com/Kaixiang/csiplugin"]
-	path = src/github.com/Kaixiang/csiplugin
-	url = https://github.com/Kaixiang/csiplugin
-	branch = master
 [submodule "src/code.cloudfoundry.org/volman"]
 	path = src/code.cloudfoundry.org/volman
 	url = https://github.com/cloudfoundry/volman
